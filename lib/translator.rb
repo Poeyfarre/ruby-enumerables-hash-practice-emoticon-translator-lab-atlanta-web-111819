@@ -24,7 +24,7 @@ end
 return result
 end
 
-def get_english_meaning
+def get_english_meaning(path, emoticon)
  emots = load_library(path)
   result = emots["get_meaning"][emoticon]
   if result == nil
