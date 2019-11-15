@@ -25,5 +25,10 @@ return result
 end
 
 def get_english_meaning
-  
+ emots = load_library(path)
+  result = emots["get_meaning"][emoticon]
+  if result == nil
+    result = "We couldn't find that item!" 
+end
+return result 
 end
