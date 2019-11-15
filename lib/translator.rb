@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, emoticon)
   emots = load_library(path)
   result = emots["get_emoticon"][emoticon]
   if result == nil
-    result = "We couldn't find that item!" 
+    result = "Sorry, that emoticon was not found" 
 end
 return result
 end
